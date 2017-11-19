@@ -1,0 +1,15 @@
+h1 Movie
+
+
+table
+  thead
+    tr
+      th ID
+      th ジャンル
+      th タイトル
+    tr
+    - @movies.each do |movie|
+      td= movie.id
+      td= movie.genre
+      td= movie.title
+      td　link_to "削除"

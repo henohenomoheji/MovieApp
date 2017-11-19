@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'content/index'
+
   root to: 'movies#index'
   #get 'movies/index'
 
